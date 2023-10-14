@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>First test of JavaScript</h1>
+    <p id="test">This text will change! (JavaScript can change HTML)</p>
+    <button type="button" onclick="document.getElementById('test').innerHTML = 'This is cool 😎👍'">Just click here</button>
+    <hr>
+    <p id="css-test">This text will change it's style! (JavaScript can change CSS)</p>
+    <button type="button" onclick="document.getElementById('css-test').style.color = '#e65f55'">Just click here</button>
+    <hr>
+    <p id="display-test">This text will dissapear (JavaScript can change display setting)</p>
+    <button type="button" onclick="document.getElementById('display-test').style.display = 'none'">Just click here</button>
+    <hr>
+    <p id="functions-test">JavaScript functions test </p>
+    <button type="button" onclick="first_function()">Just click here</button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
