@@ -1,4 +1,4 @@
-let vars = [10, 2, 333, 412, 54, 111, 34, 0, 756];
+let vars = [];
 
 function array_to_html(arr){
     document.getElementById('container').innerHTML = "";
@@ -10,7 +10,19 @@ function array_to_html(arr){
     }
 };
 
+function random_int(max) {
+    return Math.floor(Math.random()*max);
+};
+
+function create_array(n) {
+    for (let i = 0; i <= n; i++) {
+        vars.push(random_int(999));
+    }
+};
+
 window.onload = function () {
+    array_to_html(vars);
+    create_array(7);
     array_to_html(vars)
 };
 
@@ -19,7 +31,7 @@ function sort_num() {
 };
 
 function sort_aph() {
-    array_to_html(vars.sort())
+    array_to_html(vars.sort());
 };
 
 function sort_ran() {
