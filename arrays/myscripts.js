@@ -15,14 +15,14 @@ function random_int(max) {
 };
 
 function create_array(n) {
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
         vars.push(random_int(999));
     }
 };
 
 window.onload = function () {
     array_to_html(vars);
-    create_array(7);
+    create_array(8);
     array_to_html(vars)
 };
 
